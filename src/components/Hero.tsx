@@ -15,12 +15,13 @@ const Hero = ({ title = 'Avengers Endgame', score = 10 }) => {
         }
     }
     return (
-        <header className="relative min-h-screen">
+        <header className="box-border relative min-h-screen -mb-64 pb-64">
             <img
-                className="object-cover object-center h-full w-full"
+                className="object-cover object-center h-auto w-full"
                 src={placeholder}
                 alt='FIlme em destaque'
             />
+            <div className="absolute left-0 bottom-64 w-full h-full bg-gradient-to-b from-transparent to-black"></div> {/*propriedades para aplicar gradiente preto na imagem na parte de baixo.bg-gradient-to-b, indica que o gradiente é no botton */}
             <article className="absolute text-justify bottom-0 mb-80 px-32">
                 <p className="text-3xl">Assita agora:</p>
                 <h2 className="text-6xl font-bold ">{title}</h2>
